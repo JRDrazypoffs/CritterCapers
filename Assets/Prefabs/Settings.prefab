@@ -2020,14 +2020,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719667560552106602}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8771567179892791709}
   - {fileID: 1582656198054531933}
-  m_Father: {fileID: 1586559890879373623}
+  m_Father: {fileID: 7311554104425865522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3478,7 +3478,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1056011152375248054}
   toggleTransition: 1
   graphic: {fileID: 1622006423346851977}
@@ -4715,6 +4715,8 @@ GameObject:
   - component: {fileID: 341116494219204262}
   - component: {fileID: 3677182616231562936}
   - component: {fileID: 379463488937723232}
+  - component: {fileID: 3705724010852838588}
+  - component: {fileID: 7266206457177611154}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -4736,6 +4738,7 @@ RectTransform:
   m_Children:
   - {fileID: 7151310934428872805}
   - {fileID: 1673119741732484591}
+  - {fileID: 8358525080071071594}
   m_Father: {fileID: 1586559890879373623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4796,6 +4799,40 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
+--- !u!225 &3705724010852838588
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4931378384618982417}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &7266206457177611154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4931378384618982417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd124da762811149b288404107df3ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playOnEnable: 1
+  _startingXScale: 0.8
+  _startingYScale: 0.8
+  _scaleSpeed: 0.2
+  _overshootScaleAmount: 0
+  _overshootReturnSpeed: 0
+  _startingOpacity: 0.5
+  _opacityChangeSpeed: 0.2
+  _startPosOffset: {x: 0, y: 0}
+  _moveInSpeed: 0
 --- !u!1 &5107824194339836068
 GameObject:
   m_ObjectHideFlags: 0
@@ -7856,7 +7893,6 @@ RectTransform:
   m_Children:
   - {fileID: 5459491747738383431}
   - {fileID: 7311554104425865522}
-  - {fileID: 8358525080071071594}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -8404,7 +8440,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 517923431986628226}
   m_Template: {fileID: 3923367993466539364}
   m_CaptionText: {fileID: 4315265827569858278}
