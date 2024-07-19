@@ -8,4 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: 0a73d90a351ea2c4a9682cb809df4e60
+  - enabled: 1
+    path: Assets/Scenes/T1_FeedMiniGame.unity
+    guid: c9dbcead8e7ebab498d431ad81c95cb3
+  - enabled: 1
+    path: Assets/Scenes/T2_TreatMiniGame.unity
+    guid: d40d8828cba1dd34ca87696b65293f57
+  - enabled: 1
+    path: Assets/Scenes/T3_RescueMiniGame.unity
+    guid: c7b3aa3e7908e8a45a8f9b5e6d058dd6
+  - enabled: 1
+    path: Assets/Scenes/T4_ReleaseMiniGame.unity
+    guid: dfed294a4de7b2a4c86fd00ad7359888
+  - enabled: 1
+    path: Assets/Scenes/T5_ApprehendMiniGame.unity
+    guid: 94220cffae90ae8498693ed03230d8c7
   m_configObjects: {}

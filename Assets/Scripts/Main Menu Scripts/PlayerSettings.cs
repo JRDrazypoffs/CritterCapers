@@ -294,13 +294,13 @@ public class PlayerSettings : MonoBehaviour
         PlayerPrefs.Save();
 
         // Initialise all temp variables after save
-        TempMasterVolume = 0;
-        TempBGMVolume = 0;
-        TempSFXVolume = 0;
-        TempDifficultyIndex = 0;
-        TempQualityIndex = 0;
-        TempResolutionIndex = 0;
-        // TempIsFullscreen = 0;
+        // TempMasterVolume = 0;
+        // TempBGMVolume = 0;
+        // TempSFXVolume = 0;
+        // TempDifficultyIndex = 0;
+        // TempQualityIndex = 0;
+        // TempResolutionIndex = 0;
+        // // TempIsFullscreen = 0;
         
         Start();
     }
