@@ -4338,6 +4338,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4932908332029622571, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: BGM
+      value: 
+      objectReference: {fileID: 1876897779}
     - target: {fileID: 5406002997727228700, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4420,7 +4424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7228418312361269237, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_text
-      value: Catch Hunters
+      value: Hunt Hunters
       objectReference: {fileID: 0}
     - target: {fileID: 9026876900531492687, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_text

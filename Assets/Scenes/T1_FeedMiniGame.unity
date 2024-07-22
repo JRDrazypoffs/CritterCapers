@@ -1720,6 +1720,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4932908332029622571, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: BGM
+      value: 
+      objectReference: {fileID: 1876897779}
+    - target: {fileID: 4932908332029622571, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: RemainingTime
+      value: 190
+      objectReference: {fileID: 0}
     - target: {fileID: 5160465316514219183, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -16,7 +16,7 @@ public class TimeControl : MonoBehaviour
 
     public GameObject TimesUpPanel;
 
-    public Animator HandAnimator;
+    // public Animator HandAnimator;
 
     public static int SoundTrigger = 0;
 
@@ -34,11 +34,11 @@ public class TimeControl : MonoBehaviour
         // Count Down
         if(RemainingTime > 0){
             RemainingTime -= Time.deltaTime;
-            HandAnimator.Play("HandTimerIdle");
+            // HandAnimator.Play("HandTimerIdle");
         }else if(RemainingTime < 0){
             RemainingTime = 0;
             TimerText.color = Color.red;
-            HandAnimator.Play("HandTimerOut");
+            // HandAnimator.Play("HandTimerOut");
             TickingSound.Stop();
             TimesUpSound.Play();
             BGM.Stop();
