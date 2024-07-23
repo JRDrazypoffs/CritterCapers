@@ -18,34 +18,43 @@ public class BadgeRankTracker : MonoBehaviour
 
     public TMP_Text[] BadgesPanelLabel;
 
+    private DialogueVertexAnimator dialogueVertexAnimator;
+
 
     // Start is called before the first frame update
     void Start()
     {
+
         for (int i = 0;i<Badges.Length;i++){
             Badges[i].SetActive(false);
             BadgesPanel[i].GetComponent<Image>().enabled = false;
             BadgesPanelLabel[i].enabled = false;
         }
 
-        // PlayerTotalScore = PlayerPrefs.GetInt("Player Pref Total Score");
-        // TODO: remove after done with the scoring system. this is a stub.
-        PlayerTotalScore = TestingScore;
+        PlayerTotalScore = PlayerPrefs.GetInt("Player Pref Total Score");
+
+        // Show the text on mainmenu
+        TotalScore.text = PlayerTotalScore.ToString();
+        // PlayerTotalScore = TestingScore;
+
+        dialogueVertexAnimator = new DialogueVertexAnimator(TotalScore);
+        PlayDialogue("<anim:wave>"+TotalScore.text+"</anim>");
     }
 
     // Update is called once per frame
     void Update()
     {   
 
-        // Show the text on mainmenu
-        TotalScore.text = PlayerTotalScore.ToString();
-
         // Show the value on progress bar
-        if(PlayerTotalScore<=100){
+        if(PlayerTotalScore>=0 && PlayerTotalScore<=100){
             RankProgressBar.value = 4;
             Badges[0].SetActive(true);
-            BadgesPanel[0].GetComponent<Image>().enabled = true;
-            BadgesPanelLabel[0].enabled = true;
+
+            for (int i = 0;i<1;i++){
+                BadgesPanel[i].GetComponent<Image>().enabled = true;
+                BadgesPanelLabel[i].enabled = true;
+            }
+
         }else if(PlayerTotalScore>100 && PlayerTotalScore<=500){
             RankProgressBar.value = 27;
             Badges[1].SetActive(true);
@@ -74,7 +83,7 @@ public class BadgeRankTracker : MonoBehaviour
             }
             
         }else{
-            RankProgressBar.value = 97;
+            RankProgressBar.value = 100;
             Badges[4].SetActive(true);
             
             for (int i = 0;i<5;i++){
@@ -83,5 +92,13 @@ public class BadgeRankTracker : MonoBehaviour
             }
             
         }
+    }
+
+    private Coroutine typeRoutine = null;
+    void PlayDialogue(string message) {
+        this.EnsureCoroutineStopped(ref typeRoutine);
+        dialogueVertexAnimator.textAnimating = false;
+        List<DialogueCommand> commands = DialogueUtility.ProcessInputString(message, out string totalTextMessage);
+        typeRoutine = StartCoroutine(dialogueVertexAnimator.AnimateTextIn(commands, totalTextMessage, null));
     }
 }

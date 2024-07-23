@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 24188350}
   - component: {fileID: 24188351}
   - component: {fileID: 24188352}
+  - component: {fileID: 24188353}
   m_Layer: 0
   m_Name: Animal (3)
   m_TagString: Untagged
@@ -394,6 +395,21 @@ PolygonCollider2D:
       - {x: 1.06, y: -2.98}
       - {x: 0.96, y: -2.98}
   m_UseDelaunayMesh: 0
+--- !u!114 &24188353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24188349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 24188350}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &28445256
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +421,7 @@ GameObject:
   - component: {fileID: 28445257}
   - component: {fileID: 28445258}
   - component: {fileID: 28445259}
+  - component: {fileID: 28445260}
   m_Layer: 0
   m_Name: Animal (1)
   m_TagString: Untagged
@@ -722,6 +739,21 @@ PolygonCollider2D:
       - {x: -2.605, y: -2.095}
       - {x: -2.495, y: -1.045}
   m_UseDelaunayMesh: 0
+--- !u!114 &28445260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28445256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 28445257}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &50485150
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +765,7 @@ GameObject:
   - component: {fileID: 50485151}
   - component: {fileID: 50485152}
   - component: {fileID: 50485153}
+  - component: {fileID: 50485154}
   m_Layer: 0
   m_Name: Animal (4)
   m_TagString: Untagged
@@ -1040,6 +1073,21 @@ PolygonCollider2D:
       - {x: -1.9499999, y: -1.65}
       - {x: -1.88, y: -1.49}
   m_UseDelaunayMesh: 0
+--- !u!114 &50485154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50485150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 50485151}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &127722087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,6 +1425,7 @@ GameObject:
   - component: {fileID: 234907593}
   - component: {fileID: 234907594}
   - component: {fileID: 234907595}
+  - component: {fileID: 234907596}
   m_Layer: 0
   m_Name: Animal (4)
   m_TagString: Untagged
@@ -1812,6 +1861,21 @@ PolygonCollider2D:
       - {x: -0.92499995, y: 2.615}
       - {x: -0.935, y: 2.625}
   m_UseDelaunayMesh: 0
+--- !u!114 &234907596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234907592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 234907593}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &325485795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,6 +2332,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &405954218 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5697393942390379216, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
+  m_PrefabInstance: {fileID: 1326555518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &414212681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,6 +2384,7 @@ GameObject:
   - component: {fileID: 417037070}
   - component: {fileID: 417037071}
   - component: {fileID: 417037072}
+  - component: {fileID: 417037073}
   m_Layer: 0
   m_Name: Animal (5)
   m_TagString: Untagged
@@ -2549,6 +2619,21 @@ PolygonCollider2D:
       - {x: -1.8, y: -1.54}
       - {x: -1.6899999, y: -1.52}
   m_UseDelaunayMesh: 0
+--- !u!114 &417037073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417037069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 417037070}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1001 &443491076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2561,14 +2646,134 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniGameUI
       objectReference: {fileID: 0}
+    - target: {fileID: 3311513962590899430, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311513962590899430, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311513962590899430, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311513962590899430, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311513962590899430, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311513962590899430, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250260659267441240, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250260659267441240, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250260659267441240, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250260659267441240, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250260659267441240, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250260659267441240, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4459187937535399334, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842800405040264744, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842800405040264744, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842800405040264744, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842800405040264744, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842800405040264744, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842800405040264744, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4932908332029622571, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: BGM
       value: 
       objectReference: {fileID: 1876897779}
+    - target: {fileID: 5035636223939069580, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035636223939069580, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035636223939069580, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035636223939069580, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035636223939069580, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035636223939069580, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060965469931221461, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060965469931221461, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060965469931221461, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060965469931221461, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060965469931221461, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060965469931221461, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5406002997727228700, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2649,9 +2854,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6276761063089915616, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276761063089915616, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276761063089915616, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276761063089915616, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276761063089915616, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276761063089915616, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7228418312361269237, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_text
       value: Rescue Animals
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321662273055290140, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321662273055290140, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321662273055290140, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321662273055290140, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321662273055290140, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321662273055290140, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9026876900531492687, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_text
@@ -2667,6 +2920,49 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5406002997727228700, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
   m_PrefabInstance: {fileID: 443491076}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &443491078 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1195378590560620189, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 443491076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &443491079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1033310019206145734, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 443491076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &443491080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3912045791971716686, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 443491076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &443491081 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7186693336698322478, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 443491076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &443491082 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 291373975323619377, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 443491076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &454074373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2678,6 +2974,7 @@ GameObject:
   - component: {fileID: 454074374}
   - component: {fileID: 454074375}
   - component: {fileID: 454074376}
+  - component: {fileID: 454074377}
   m_Layer: 0
   m_Name: Animal (1)
   m_TagString: Untagged
@@ -2931,6 +3228,21 @@ PolygonCollider2D:
       - {x: -1.24, y: -2.25}
       - {x: -1.11, y: -2.02}
   m_UseDelaunayMesh: 0
+--- !u!114 &454074377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454074373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 454074374}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &488807799
 GameObject:
   m_ObjectHideFlags: 0
@@ -3892,6 +4204,7 @@ GameObject:
   - component: {fileID: 742513774}
   - component: {fileID: 742513775}
   - component: {fileID: 742513776}
+  - component: {fileID: 742513777}
   m_Layer: 0
   m_Name: Animal (4)
   m_TagString: Untagged
@@ -4177,6 +4490,21 @@ PolygonCollider2D:
       - {x: -1.905, y: -1.9599999}
       - {x: -1.8249999, y: -1.67}
   m_UseDelaunayMesh: 0
+--- !u!114 &742513777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742513773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 742513774}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &769630894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,6 +4600,7 @@ GameObject:
   - component: {fileID: 786298561}
   - component: {fileID: 786298562}
   - component: {fileID: 786298563}
+  - component: {fileID: 786298564}
   m_Layer: 0
   m_Name: Animal (1)
   m_TagString: Untagged
@@ -4497,6 +4826,21 @@ PolygonCollider2D:
       - {x: -1.16, y: 0.73499995}
       - {x: -1.15, y: 0.73499995}
   m_UseDelaunayMesh: 0
+--- !u!114 &786298564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786298560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 786298561}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &822284272
 GameObject:
   m_ObjectHideFlags: 0
@@ -4859,6 +5203,7 @@ GameObject:
   - component: {fileID: 979169634}
   - component: {fileID: 979169635}
   - component: {fileID: 979169636}
+  - component: {fileID: 979169637}
   m_Layer: 0
   m_Name: Animal (5)
   m_TagString: Untagged
@@ -5066,6 +5411,21 @@ PolygonCollider2D:
       - {x: -1.8149999, y: -1.75}
       - {x: -1.755, y: -1.63}
   m_UseDelaunayMesh: 0
+--- !u!114 &979169637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979169633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 979169634}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &985968424
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,6 +5724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1005484381}
   - component: {fileID: 1005484382}
+  - component: {fileID: 1005484383}
   m_Layer: 0
   m_Name: Desert
   m_TagString: Untagged
@@ -5409,6 +5770,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1005484383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005484380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5921664681c843488e4d90a9110649d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectList:
+  - {fileID: 1772414532}
+  - {fileID: 1983888145}
+  - {fileID: 24188349}
+  - {fileID: 1262965829}
+  - {fileID: 1828613973}
+  LevelCompleteSound: {fileID: 1326555520}
+  BGMPlayer: {fileID: 1876897779}
+  Timer: {fileID: 443491080}
+  LevelCompletePanel: {fileID: 443491079}
+  SuccessMessage: {fileID: 443491078}
+  AreaScoreText: {fileID: 443491082}
+  TotalScoreText: {fileID: 443491081}
+  RemainingTime: 181
 --- !u!1 &1016326654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5420,6 +5807,7 @@ GameObject:
   - component: {fileID: 1016326655}
   - component: {fileID: 1016326656}
   - component: {fileID: 1016326657}
+  - component: {fileID: 1016326658}
   m_Layer: 0
   m_Name: Animal (3)
   m_TagString: Untagged
@@ -5617,6 +6005,21 @@ PolygonCollider2D:
       - {x: 0.13499999, y: -2.455}
       - {x: 0.205, y: -2.335}
   m_UseDelaunayMesh: 0
+--- !u!114 &1016326658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016326654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1016326655}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1025110193
 GameObject:
   m_ObjectHideFlags: 0
@@ -5712,6 +6115,7 @@ GameObject:
   - component: {fileID: 1026585034}
   - component: {fileID: 1026585035}
   - component: {fileID: 1026585036}
+  - component: {fileID: 1026585037}
   m_Layer: 0
   m_Name: Animal (5)
   m_TagString: Untagged
@@ -5994,6 +6398,21 @@ PolygonCollider2D:
       - {x: -2.735, y: -2.735}
       - {x: -2.665, y: -2.735}
   m_UseDelaunayMesh: 0
+--- !u!114 &1026585037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026585033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1026585034}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1037501286
 GameObject:
   m_ObjectHideFlags: 0
@@ -6158,6 +6577,7 @@ GameObject:
   - component: {fileID: 1140833411}
   - component: {fileID: 1140833412}
   - component: {fileID: 1140833413}
+  - component: {fileID: 1140833414}
   m_Layer: 0
   m_Name: Animal (3)
   m_TagString: Untagged
@@ -6462,6 +6882,21 @@ PolygonCollider2D:
       - {x: -0.59499997, y: -3.46}
       - {x: -0.555, y: -3.4199998}
   m_UseDelaunayMesh: 0
+--- !u!114 &1140833414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140833410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1140833411}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1146520375
 GameObject:
   m_ObjectHideFlags: 0
@@ -6530,6 +6965,7 @@ GameObject:
   - component: {fileID: 1158769614}
   - component: {fileID: 1158769615}
   - component: {fileID: 1158769616}
+  - component: {fileID: 1158769617}
   m_Layer: 0
   m_Name: Animal (3)
   m_TagString: Untagged
@@ -6872,6 +7308,21 @@ PolygonCollider2D:
       - {x: 3.3899999, y: -2.56}
       - {x: 3.49, y: -2.48}
   m_UseDelaunayMesh: 0
+--- !u!114 &1158769617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158769613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1158769614}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1167547014
 GameObject:
   m_ObjectHideFlags: 0
@@ -6916,6 +7367,7 @@ GameObject:
   - component: {fileID: 1184532047}
   - component: {fileID: 1184532048}
   - component: {fileID: 1184532049}
+  - component: {fileID: 1184532050}
   m_Layer: 0
   m_Name: Animal (2)
   m_TagString: Untagged
@@ -7226,6 +7678,21 @@ PolygonCollider2D:
       - {x: 2.5049999, y: -1.55}
       - {x: 2.465, y: -1.5699999}
   m_UseDelaunayMesh: 0
+--- !u!114 &1184532050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184532046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1184532047}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1216894632
 GameObject:
   m_ObjectHideFlags: 0
@@ -7404,6 +7871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228251841}
   - component: {fileID: 1228251842}
+  - component: {fileID: 1228251843}
   m_Layer: 0
   m_Name: Polar
   m_TagString: Untagged
@@ -7449,6 +7917,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1228251843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228251840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5921664681c843488e4d90a9110649d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectList:
+  - {fileID: 454074373}
+  - {fileID: 1184532046}
+  - {fileID: 1016326654}
+  - {fileID: 234907592}
+  - {fileID: 979169633}
+  LevelCompleteSound: {fileID: 1326555520}
+  BGMPlayer: {fileID: 1876897779}
+  Timer: {fileID: 443491080}
+  LevelCompletePanel: {fileID: 443491079}
+  SuccessMessage: {fileID: 443491078}
+  AreaScoreText: {fileID: 443491082}
+  TotalScoreText: {fileID: 443491081}
+  RemainingTime: 181
 --- !u!1 &1228795906
 GameObject:
   m_ObjectHideFlags: 0
@@ -7783,6 +8277,7 @@ GameObject:
   - component: {fileID: 1262965830}
   - component: {fileID: 1262965831}
   - component: {fileID: 1262965832}
+  - component: {fileID: 1262965833}
   m_Layer: 0
   m_Name: Animal (4)
   m_TagString: Untagged
@@ -8097,6 +8592,21 @@ PolygonCollider2D:
       - {x: 1.39, y: -2.575}
       - {x: 1.38, y: -2.5549998}
   m_UseDelaunayMesh: 0
+--- !u!114 &1262965833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262965829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1262965830}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1291418243
 GameObject:
   m_ObjectHideFlags: 0
@@ -8495,6 +9005,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8582701927087165788, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
   m_PrefabInstance: {fileID: 1326555518}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1326555520 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5504051674946930092, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
+  m_PrefabInstance: {fileID: 1326555518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1327289466
 GameObject:
   m_ObjectHideFlags: 0
@@ -8541,6 +9056,7 @@ GameObject:
   - component: {fileID: 1351446143}
   - component: {fileID: 1351446144}
   - component: {fileID: 1351446145}
+  - component: {fileID: 1351446146}
   m_Layer: 0
   m_Name: Animal (3)
   m_TagString: Untagged
@@ -8845,6 +9361,21 @@ PolygonCollider2D:
       - {x: 1.0699999, y: -3.4199998}
       - {x: 1.12, y: -3.29}
   m_UseDelaunayMesh: 0
+--- !u!114 &1351446146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351446142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1351446143}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1376741963
 GameObject:
   m_ObjectHideFlags: 0
@@ -9057,6 +9588,7 @@ GameObject:
   - component: {fileID: 1457108484}
   - component: {fileID: 1457108485}
   - component: {fileID: 1457108486}
+  - component: {fileID: 1457108487}
   m_Layer: 0
   m_Name: Animal (1)
   m_TagString: Untagged
@@ -9333,6 +9865,21 @@ PolygonCollider2D:
       - {x: -2.175, y: -1.8249999}
       - {x: -2.2949998, y: -1.685}
   m_UseDelaunayMesh: 0
+--- !u!114 &1457108487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457108483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1457108484}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1480166130
 GameObject:
   m_ObjectHideFlags: 0
@@ -9428,6 +9975,7 @@ GameObject:
   - component: {fileID: 1528982138}
   - component: {fileID: 1528982139}
   - component: {fileID: 1528982140}
+  - component: {fileID: 1528982141}
   m_Layer: 0
   m_Name: Animal (2)
   m_TagString: Untagged
@@ -9769,6 +10317,21 @@ PolygonCollider2D:
       - {x: -0.81, y: -2.08}
       - {x: -0.79999995, y: -2.07}
   m_UseDelaunayMesh: 0
+--- !u!114 &1528982141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528982137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1528982138}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1564687746
 GameObject:
   m_ObjectHideFlags: 0
@@ -10166,6 +10729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646176064}
   - component: {fileID: 1646176065}
+  - component: {fileID: 1646176066}
   m_Layer: 0
   m_Name: Forest
   m_TagString: Untagged
@@ -10211,6 +10775,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1646176066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646176063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5921664681c843488e4d90a9110649d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectList:
+  - {fileID: 1457108483}
+  - {fileID: 1759067368}
+  - {fileID: 1351446142}
+  - {fileID: 742513773}
+  - {fileID: 1026585033}
+  LevelCompleteSound: {fileID: 1326555520}
+  BGMPlayer: {fileID: 1876897779}
+  Timer: {fileID: 443491080}
+  LevelCompletePanel: {fileID: 443491079}
+  SuccessMessage: {fileID: 443491078}
+  AreaScoreText: {fileID: 443491082}
+  TotalScoreText: {fileID: 443491081}
+  RemainingTime: 181
 --- !u!1 &1742984628
 GameObject:
   m_ObjectHideFlags: 0
@@ -10255,6 +10845,7 @@ GameObject:
   - component: {fileID: 1759067369}
   - component: {fileID: 1759067370}
   - component: {fileID: 1759067371}
+  - component: {fileID: 1759067372}
   m_Layer: 0
   m_Name: Animal (2)
   m_TagString: Untagged
@@ -10628,6 +11219,21 @@ PolygonCollider2D:
       - {x: 1.66, y: -3.75}
       - {x: 1.5799999, y: -3.6999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &1759067372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759067368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1759067369}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1765070862
 GameObject:
   m_ObjectHideFlags: 0
@@ -10723,6 +11329,7 @@ GameObject:
   - component: {fileID: 1772414533}
   - component: {fileID: 1772414534}
   - component: {fileID: 1772414535}
+  - component: {fileID: 1772414536}
   m_Layer: 0
   m_Name: Animal (1)
   m_TagString: Untagged
@@ -11003,6 +11610,21 @@ PolygonCollider2D:
       - {x: -3.08, y: -2.21}
       - {x: -2.98, y: -2.1299999}
   m_UseDelaunayMesh: 0
+--- !u!114 &1772414536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772414532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1772414533}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1784037008
 GameObject:
   m_ObjectHideFlags: 0
@@ -11013,6 +11635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1784037009}
   - component: {fileID: 1784037010}
+  - component: {fileID: 1784037011}
   m_Layer: 0
   m_Name: Grasslands
   m_TagString: Untagged
@@ -11058,6 +11681,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1784037011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784037008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5921664681c843488e4d90a9110649d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectList:
+  - {fileID: 28445256}
+  - {fileID: 1528982137}
+  - {fileID: 1158769613}
+  - {fileID: 2057831695}
+  - {fileID: 1925513716}
+  LevelCompleteSound: {fileID: 1326555520}
+  BGMPlayer: {fileID: 1876897779}
+  Timer: {fileID: 443491080}
+  LevelCompletePanel: {fileID: 443491079}
+  SuccessMessage: {fileID: 443491078}
+  AreaScoreText: {fileID: 443491082}
+  TotalScoreText: {fileID: 443491081}
+  RemainingTime: 181
 --- !u!1 &1800391303
 GameObject:
   m_ObjectHideFlags: 0
@@ -11186,6 +11835,7 @@ GameObject:
   - component: {fileID: 1828613974}
   - component: {fileID: 1828613975}
   - component: {fileID: 1828613976}
+  - component: {fileID: 1828613977}
   m_Layer: 0
   m_Name: Animal (5)
   m_TagString: Untagged
@@ -11553,6 +12203,21 @@ PolygonCollider2D:
       - {x: 1.49, y: -3.075}
       - {x: 1.5, y: -2.995}
   m_UseDelaunayMesh: 0
+--- !u!114 &1828613977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828613973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1828613974}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1839065965
 GameObject:
   m_ObjectHideFlags: 0
@@ -11564,6 +12229,7 @@ GameObject:
   - component: {fileID: 1839065966}
   - component: {fileID: 1839065967}
   - component: {fileID: 1839065968}
+  - component: {fileID: 1839065969}
   m_Layer: 0
   m_Name: Animal (2)
   m_TagString: Untagged
@@ -11870,6 +12536,21 @@ PolygonCollider2D:
       - {x: 0.79499996, y: -1.5949999}
       - {x: 0.875, y: -1.5749999}
   m_UseDelaunayMesh: 0
+--- !u!114 &1839065969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839065965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1839065966}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1857895008
 GameObject:
   m_ObjectHideFlags: 0
@@ -12075,6 +12756,7 @@ GameObject:
   - component: {fileID: 1925513717}
   - component: {fileID: 1925513718}
   - component: {fileID: 1925513719}
+  - component: {fileID: 1925513720}
   m_Layer: 0
   m_Name: Animal (5)
   m_TagString: Untagged
@@ -12386,6 +13068,21 @@ PolygonCollider2D:
       - {x: -2.095, y: -2.2}
       - {x: -2.2649999, y: -1.9599999}
   m_UseDelaunayMesh: 0
+--- !u!114 &1925513720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925513716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1925513717}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &1949697145
 GameObject:
   m_ObjectHideFlags: 0
@@ -12429,6 +13126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1956613965}
   - component: {fileID: 1956613966}
+  - component: {fileID: 1956613967}
   m_Layer: 0
   m_Name: Wetlands
   m_TagString: Untagged
@@ -12474,6 +13172,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1956613967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956613964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5921664681c843488e4d90a9110649d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectList:
+  - {fileID: 786298560}
+  - {fileID: 1839065965}
+  - {fileID: 1140833410}
+  - {fileID: 50485150}
+  - {fileID: 417037069}
+  LevelCompleteSound: {fileID: 1326555520}
+  BGMPlayer: {fileID: 1876897779}
+  Timer: {fileID: 443491080}
+  LevelCompletePanel: {fileID: 443491079}
+  SuccessMessage: {fileID: 443491078}
+  AreaScoreText: {fileID: 443491082}
+  TotalScoreText: {fileID: 443491081}
+  RemainingTime: 181
 --- !u!1 &1958311904
 GameObject:
   m_ObjectHideFlags: 0
@@ -12591,6 +13315,7 @@ GameObject:
   - component: {fileID: 1983888146}
   - component: {fileID: 1983888147}
   - component: {fileID: 1983888148}
+  - component: {fileID: 1983888149}
   m_Layer: 0
   m_Name: Animal (2)
   m_TagString: Untagged
@@ -12900,6 +13625,21 @@ PolygonCollider2D:
       - {x: -3.205, y: -1.89}
       - {x: -2.995, y: -1.8299999}
   m_UseDelaunayMesh: 0
+--- !u!114 &1983888149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983888145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 1983888146}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &2007461334
 GameObject:
   m_ObjectHideFlags: 0
@@ -13101,6 +13841,7 @@ GameObject:
   - component: {fileID: 2057831696}
   - component: {fileID: 2057831697}
   - component: {fileID: 2057831698}
+  - component: {fileID: 2057831699}
   m_Layer: 0
   m_Name: Animal (4)
   m_TagString: Untagged
@@ -13388,6 +14129,21 @@ PolygonCollider2D:
       - {x: 2.445, y: -2.47}
       - {x: 2.5049999, y: -2.46}
   m_UseDelaunayMesh: 0
+--- !u!114 &2057831699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057831695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0420616791695e4ea11fe76c8b8ab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPos: {fileID: 2057831696}
+  SuccessClick: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  FoundSound: {fileID: 405954218}
 --- !u!1 &2065447023
 GameObject:
   m_ObjectHideFlags: 0
