@@ -39,12 +39,14 @@ public class CheckAnimalHabitat : MonoBehaviour
     public AudioSource ErrorSound;
     public Transform Sparkle;
     public static int ReleaseErrorCount;
+    public static int ReleaseSuccessCount;
     
     
 
     // Start is called before the first frame update
     void Start(){
-        
+        ReleaseErrorCount=0;
+        ReleaseSuccessCount=0;
     }
 
     // Update is called once per frame
@@ -54,6 +56,7 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (ForestAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Forest.GetComponent<PolygonCollider2D>())){
                 ForestAnimals[i].SetActive(false);
                 Instantiate(Sparkle, ForestPos.position, Sparkle.rotation);
+                ReleaseSuccessCount++;
                 SuccessSound.Play();
             }
             // Error Detect
@@ -84,6 +87,7 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (GrasslandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Grasslands.GetComponent<PolygonCollider2D>())){
                 GrasslandsAnimals[i].SetActive(false);
                 Instantiate(Sparkle, GrasslandsPos.position, Sparkle.rotation);
+                ReleaseSuccessCount++;
                 SuccessSound.Play();
             }
             // Error Detect
@@ -114,6 +118,7 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (WetlandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Wetlands.GetComponent<PolygonCollider2D>())){
                 WetlandsAnimals[i].SetActive(false);
                 Instantiate(Sparkle, WetlandsPos.position, Sparkle.rotation);
+                ReleaseSuccessCount++;
                 SuccessSound.Play();
             }
             // Error Detect
@@ -144,6 +149,7 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (DesertAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Desert.GetComponent<PolygonCollider2D>())){
                 DesertAnimals[i].SetActive(false);
                 Instantiate(Sparkle, DesertPos.position, Sparkle.rotation);
+                ReleaseSuccessCount++;
                 SuccessSound.Play();
             }
             // Error Detect
@@ -174,6 +180,7 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (PolarAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Polar.GetComponent<PolygonCollider2D>())){
                 PolarAnimals[i].SetActive(false);
                 Instantiate(Sparkle, PolarPos.position, Sparkle.rotation);
+                ReleaseSuccessCount++;
                 SuccessSound.Play();
             }
             // Error Detect

@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &64002388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3912045791971716686, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 182348770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &132709429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,6 +1057,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &371932245 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7186693336698322478, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 182348770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &388522531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,6 +1870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705227805}
   - component: {fileID: 705227806}
+  - component: {fileID: 705227807}
   m_Layer: 0
   m_Name: Set (1)
   m_TagString: Untagged
@@ -1918,6 +1935,37 @@ MonoBehaviour:
   SuccessSound: {fileID: 1304696521}
   ErrorSound: {fileID: 1957271282}
   Sparkle: {fileID: 3798873890865051134, guid: 3c159c85360906b469c89ad3facfbf65, type: 3}
+--- !u!114 &705227807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705227804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e6d9f4122544c4e8c7af857e56d10b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectList:
+  - {fileID: 552299702}
+  - {fileID: 388522531}
+  - {fileID: 2094958305}
+  - {fileID: 2135573233}
+  - {fileID: 1865590022}
+  - {fileID: 200019503}
+  - {fileID: 808870965}
+  - {fileID: 1412995603}
+  - {fileID: 624439364}
+  - {fileID: 1405945233}
+  LevelCompleteSound: {fileID: 1804299998}
+  BGMPlayer: {fileID: 1876897779}
+  Timer: {fileID: 64002388}
+  LevelCompletePanel: {fileID: 2145729712}
+  SuccessMessage: {fileID: 1806794624}
+  AreaScoreText: {fileID: 802522625}
+  TotalScoreText: {fileID: 371932245}
+  RemainingTime: 181
 --- !u!1 &714175244
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,6 +2083,17 @@ Transform:
   - {fileID: 959156970}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802522625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 291373975323619377, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 182348770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &808870965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,6 +3716,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!82 &1804299998 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5504051674946930092, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
+  m_PrefabInstance: {fileID: 959156969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1806794624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1195378590560620189, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 182348770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1865590022
 GameObject:
   m_ObjectHideFlags: 0
@@ -4735,6 +4810,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d855c9195952f0478e43715dda18600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2145729712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1033310019206145734, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 182348770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
