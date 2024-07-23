@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 268983584}
   - component: {fileID: 268983583}
   - component: {fileID: 268983585}
+  - component: {fileID: 268983586}
   m_Layer: 0
   m_Name: Grasslands
   m_TagString: Untagged
@@ -813,6 +814,33 @@ PolygonCollider2D:
       - {x: 1.61, y: -2.145}
       - {x: 1.61, y: 2.155}
   m_UseDelaunayMesh: 0
+--- !u!50 &268983586
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268983578}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &361669374
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,6 +855,7 @@ GameObject:
   - component: {fileID: 361669380}
   - component: {fileID: 361669379}
   - component: {fileID: 361669381}
+  - component: {fileID: 361669382}
   m_Layer: 0
   m_Name: Arctic
   m_TagString: Untagged
@@ -996,6 +1025,33 @@ PolygonCollider2D:
       - {x: 1.61, y: -2.135}
       - {x: 1.61, y: 2.155}
   m_UseDelaunayMesh: 0
+--- !u!50 &361669382
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361669374}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &388522531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,24 +1915,9 @@ MonoBehaviour:
   PolarAnimals:
   - {fileID: 388522531}
   - {fileID: 1405945233}
-  ForestAnimalsPos:
-  - {fileID: 2094958306}
-  - {fileID: 624439365}
-  GrasslandsAnimalsPos:
-  - {fileID: 2135573234}
-  - {fileID: 1412995604}
-  WetlandsAnimalsPos:
-  - {fileID: 552299703}
-  - {fileID: 200019504}
-  DesertAnimalsPos:
-  - {fileID: 1865590023}
-  - {fileID: 808870966}
-  PolarAnimalsPos:
-  - {fileID: 388522532}
-  - {fileID: 1405945234}
   SuccessSound: {fileID: 1304696521}
   ErrorSound: {fileID: 1957271282}
-  Sparkle: {fileID: 3798873890865051134, guid: 3d274a42f776f9b45a59fcbfa1f623ee, type: 3}
+  Sparkle: {fileID: 3798873890865051134, guid: 3c159c85360906b469c89ad3facfbf65, type: 3}
 --- !u!1 &714175244
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,6 +2382,7 @@ GameObject:
   - component: {fileID: 1264417138}
   - component: {fileID: 1264417137}
   - component: {fileID: 1264417139}
+  - component: {fileID: 1264417140}
   m_Layer: 0
   m_Name: Desert
   m_TagString: Untagged
@@ -2511,6 +2553,33 @@ PolygonCollider2D:
       - {x: 1.61, y: -2.125}
       - {x: 1.61, y: 2.155}
   m_UseDelaunayMesh: 0
+--- !u!50 &1264417140
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264417132}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!82 &1304696521 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1380010842519567105, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
@@ -2530,6 +2599,7 @@ GameObject:
   - component: {fileID: 1369083464}
   - component: {fileID: 1369083463}
   - component: {fileID: 1369083465}
+  - component: {fileID: 1369083466}
   m_Layer: 0
   m_Name: Forest
   m_TagString: Untagged
@@ -2699,6 +2769,33 @@ PolygonCollider2D:
       - {x: 1.61, y: -2.135}
       - {x: 1.61, y: 2.155}
   m_UseDelaunayMesh: 0
+--- !u!50 &1369083466
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369083458}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1391924153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,6 +3357,7 @@ GameObject:
   - component: {fileID: 1420788229}
   - component: {fileID: 1420788228}
   - component: {fileID: 1420788230}
+  - component: {fileID: 1420788231}
   m_Layer: 0
   m_Name: Wetlands
   m_TagString: Untagged
@@ -3430,6 +3528,33 @@ PolygonCollider2D:
       - {x: 1.61, y: -2.125}
       - {x: 1.61, y: 2.155}
   m_UseDelaunayMesh: 0
+--- !u!50 &1420788231
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420788223}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1564687746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,7 +3581,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564687746}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
@@ -3935,7 +4060,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.05, y: 0.89}
+  m_AnchoredPosition: {x: 1.05, y: 1.76}
   m_SizeDelta: {x: 19.0892, y: 5.3599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1894876345
@@ -4351,7 +4476,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: 21300000, guid: e0563eb120dc4a347a3e006de596fecf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3421d75eb71e8b45a4dbc549f82fa40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

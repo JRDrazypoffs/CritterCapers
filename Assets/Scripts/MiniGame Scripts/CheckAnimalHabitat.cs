@@ -27,12 +27,12 @@ public class CheckAnimalHabitat : MonoBehaviour
     public GameObject[] DesertAnimals;
     public GameObject[] PolarAnimals;
 
-    [Header("Animal Position List")]
-    public Transform[] ForestAnimalsPos;
-    public Transform[] GrasslandsAnimalsPos;
-    public Transform[] WetlandsAnimalsPos;
-    public Transform[] DesertAnimalsPos;
-    public Transform[] PolarAnimalsPos;
+    // [Header("Animal Position List")]
+    // public Transform[] ForestAnimalsPos;
+    // public Transform[] GrasslandsAnimalsPos;
+    // public Transform[] WetlandsAnimalsPos;
+    // public Transform[] DesertAnimalsPos;
+    // public Transform[] PolarAnimalsPos;
 
     [Header("Utility")]
     public AudioSource SuccessSound;
