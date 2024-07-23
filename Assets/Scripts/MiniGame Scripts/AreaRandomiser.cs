@@ -6,7 +6,8 @@ public class AreaRandomiser : MonoBehaviour
 {
 
     public List<GameObject> Area = new List<GameObject>();
-    private int RandomNumber = 0;
+    public int RandomNumber = 0;
+    public static int AreaRandomNumber = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class AreaRandomiser : MonoBehaviour
         }
         
         RandomNumber = Random.Range(0,Area.Count);
+        AreaRandomNumber = RandomNumber;
         Area[RandomNumber].SetActive(true);
     }
 

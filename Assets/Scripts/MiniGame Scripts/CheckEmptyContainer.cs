@@ -28,6 +28,8 @@ public class CheckEmptyContainer : MonoBehaviour
     private static float TimeBonusScore = 5;
     private static float FullPercent = 1;
 
+    public static bool CheckClear = false;
+
     // Start is called before the first frame update
     void Start(){
         string TempUsername = PlayerPrefs.GetString("Player Pref Username");
@@ -59,6 +61,7 @@ public class CheckEmptyContainer : MonoBehaviour
             if (ObjectList.Count == 0){
                 print("Area Cleared");
                 Destroy(Timer);
+                CheckClear = true;
                 BGMPlayer.Stop();
                 LevelCompleteSound.Play();
                 LevelCompletePanel.SetActive(true);

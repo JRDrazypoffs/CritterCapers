@@ -6954,6 +6954,7 @@ MonoBehaviour:
   - {fileID: 1005484380}
   - {fileID: 1956613964}
   - {fileID: 1228251840}
+  RandomNumber: 0
 --- !u!1 &1158769613
 GameObject:
   m_ObjectHideFlags: 0
@@ -10344,6 +10345,7 @@ GameObject:
   - component: {fileID: 1564687749}
   - component: {fileID: 1564687748}
   - component: {fileID: 1564687747}
+  - component: {fileID: 1564687751}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -10434,6 +10436,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1564687751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564687746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e36dabcb6e5d6b4ebccc98d3d90d236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1567649289
 GameObject:
   m_ObjectHideFlags: 0
