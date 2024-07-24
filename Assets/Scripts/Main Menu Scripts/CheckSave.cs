@@ -11,7 +11,7 @@ public class CheckSave : MonoBehaviour
     public AudioSource BGM;
     public AudioSource WarningSound;
     public Button LoadGameBtn;
-    public Button SettingsBtn;
+    // public Button SettingsBtn;
 
     private static int SoundTrigger = 0;
 
@@ -44,12 +44,8 @@ public class CheckSave : MonoBehaviour
             }
             SaveAvailableWarningPanel.SetActive(true);
         }else{
-            // PlayerPrefs.DeleteAll();
-            PlayerPrefs.DeleteKey("Settings Has Set");
-            PlayerPrefs.DeleteKey("Unlocked Levels");
-            PlayerPrefs.DeleteKey("Reached Index");
-            PlayerPrefs.DeleteKey("Player Pref First Clear Date");
-            SceneManager.LoadSceneAsync("Start New Game Menu");
+            PlayerPrefs.DeleteAll();
+            SceneManager.LoadSceneAsync("StartNewGameMenu");
         }
 
         if(SoundTrigger == 1){

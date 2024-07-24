@@ -4,7 +4,6 @@ using System.Linq;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-using UnityEditor.PackageManager;
 
 public class QuestionTreatManager : MonoBehaviour
 {

@@ -12,76 +12,39 @@ public class SaveInitSettings : MonoBehaviour
     Resolution[] resolutionsStart;
 
     [SerializeField] TMP_InputField UsernameInput;
-    public TMP_Dropdown difficultyDropdown;
+    // public TMP_Dropdown difficultyDropdown;
     private int TempResolutionIndex;
-
-    public GameObject EasyPanel;
-    public GameObject ModeratePanel;
-    public GameObject DifficultPanel;
 
     // Set warning text variable
     public Button SaveBtn;
     public TMP_Text WarningTextField;
     private string UsernameName;
     private string WarningText;
-
-    // check for previously saved settings
-    private static bool SettingsInitWasSet;
     
     void Start(){
         resolutionsStart = Screen.resolutions;
         for(int i = 0; i < resolutionsStart.Length; i++){
-            // string option = resolutions[i].width + " x " + resolutions[i].height;
-
             if(resolutionsStart[i].width == Screen.currentResolution.width && 
             resolutionsStart[i].height == Screen.currentResolution.height){
                 TempResolutionIndex = i;
             }
         }
-
-        SettingsInitWasSet = PlayerPrefs.HasKey("Settings Init Was Set");
     }
 
     void Update(){
         WarningTextField.text = WarningText;
         UsernameName = UsernameInput.text;
         ValidateUsername();
-
-        if(difficultyDropdown.value==0){
-            EasyPanel.SetActive(true);
-            ModeratePanel.SetActive(false);
-            DifficultPanel.SetActive(false);
-        }else if(difficultyDropdown.value==1){
-            EasyPanel.SetActive(false);
-            ModeratePanel.SetActive(true);
-            DifficultPanel.SetActive(false);
-        }else{
-            EasyPanel.SetActive(false);
-            ModeratePanel.SetActive(false);
-            DifficultPanel.SetActive(true);
-        }
     }
 
     public void SaveInitData(){
         
-        if (SettingsInitWasSet==false){
-            // preset settings if no settings was initially set
-            PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
-            PlayerPrefs.SetInt("Player Pref Difficulty",difficultyDropdown.value);
-            PlayerPrefs.SetInt("Player Pref Resolution Index",TempResolutionIndex);
-            PlayerPrefs.SetInt("Player Pref IsFullscreen",1);
-        }else{
-            PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
-            PlayerPrefs.SetInt("Player Pref Difficulty",difficultyDropdown.value);
-            PlayerPrefs.SetFloat("Player Pref Master Volume",PlayerPrefs.GetFloat("Player Pref Master Volume"));
-            PlayerPrefs.SetFloat("Player Pref BGM Volume",PlayerPrefs.GetFloat("Player Pref BGM Volume"));
-            PlayerPrefs.SetFloat("Player Pref SFX Volume",PlayerPrefs.GetFloat("Player Pref SFX Volume"));
-            PlayerPrefs.SetInt("Player Pref Graphic QI",PlayerPrefs.GetInt("Player Pref Graphic QI"));
-            PlayerPrefs.SetInt("Player Pref Resolution Index",PlayerPrefs.GetInt("Player Pref Resolution Index"));
-            PlayerPrefs.SetInt("Player Pref IsFullscreen",PlayerPrefs.GetInt("Player Pref IsFullscreen"));
-        }
-
+        // preset settings if no settings was initially set
+        PlayerPrefs.SetString("Player Pref Username",UsernameInput.text);
+        PlayerPrefs.SetInt("Player Pref Resolution Index",TempResolutionIndex);
+        PlayerPrefs.SetInt("Player Pref IsFullscreen",1);
         PlayerPrefs.SetInt("Settings Has Set",1);
+        PlayerPrefs.SetInt("Settings Init Was Set",1);
         PlayerPrefs.Save();
     }
 

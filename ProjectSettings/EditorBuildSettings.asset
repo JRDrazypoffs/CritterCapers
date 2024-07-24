@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/T5_ApprehendMiniGame.unity
     guid: 94220cffae90ae8498693ed03230d8c7
+  - enabled: 1
+    path: Assets/Scenes/StartNewGameMenu.unity
+    guid: 7782131d93698f648bb102d9b8a2e983
   m_configObjects: {}
