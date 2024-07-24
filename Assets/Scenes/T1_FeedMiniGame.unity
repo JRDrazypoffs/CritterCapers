@@ -277,6 +277,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197672264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 291373975323619377, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 7851661173691968274}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &399496719
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +375,17 @@ SpriteRenderer:
 --- !u!114 &469086359 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7228418312361269237, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 7851661173691968274}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &482110084 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1195378590560620189, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
   m_PrefabInstance: {fileID: 7851661173691968274}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -585,6 +607,11 @@ Transform:
   - {fileID: 1301856839}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &792412743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1033310019206145734, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 7851661173691968274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &806020214
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,8 +928,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4dc7a4ec47e5e479c8bc2e158bf43c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BGMPlayer: {fileID: 1876897779}
   CorrectSFX: {fileID: 91832838}
   WrongSFX: {fileID: 2136871450}
+  LevelCompleteSound: {fileID: 1773211774}
+  LevelCompletePanel: {fileID: 792412743}
+  Timer: {fileID: 2010166481}
+  SuccessMessage: {fileID: 482110084}
+  AreaScoreText: {fileID: 197672264}
+  TotalScoreText: {fileID: 1663634013}
   questionsFeeds:
   - Animal: {fileID: 21300000, guid: af5d05fa12d1c094f8978e221b64d704, type: 3}
     Meat: 1
@@ -1029,6 +1063,7 @@ MonoBehaviour:
     Fish: 1
     Vegetation: 0
     Insect: 0
+  RemainingTime: 181
   AnimalPlaceholder: {fileID: 1996382545}
   EmptySprite: {fileID: 1352209262}
   timeBetweenQuestions: 1
@@ -1237,6 +1272,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: {fileID: 469086359}
+--- !u!114 &1663634013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7186693336698322478, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 7851661173691968274}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1773211774 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5504051674946930092, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
+  m_PrefabInstance: {fileID: 47828789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1785510568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,17 +1674,22 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -4
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: cb1be03149b2d0541b917103d9437b83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.89, y: 3.6}
+  m_Size: {x: 4.6, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2010166481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3912045791971716686, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+  m_PrefabInstance: {fileID: 7851661173691968274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2053320490
 GameObject:
   m_ObjectHideFlags: 0
