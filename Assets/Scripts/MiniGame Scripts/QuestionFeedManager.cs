@@ -14,7 +14,8 @@ public class QuestionFeedManager : MonoBehaviour
 
     private QuestionsFeed currentQuestionFeed;
 
-    private static int QuestionsLimit = 0;
+    private static int QuestionsLimit = 10;
+    private static int QuestionsCounter = 0;
 
     private int GetRandomQuestionIndex;
 
@@ -31,19 +32,27 @@ public class QuestionFeedManager : MonoBehaviour
             unansweredQuestionFeeds = questionsFeeds.ToList<QuestionsFeed>();
         }
 
-        SetCurrentQuestionFeed();
+        for (int i = 0; i<QuestionsLimit;i++){
+            SetCurrentQuestionFeed();
+        }
+
+        if(QuestionsLimit == 0){
+            SetCurrentQuestionFeed();
+        }
     }
+
     void Update(){
+        if(QuestionsCounter==QuestionsLimit){
+            // EndGame
+        }
     }
 
     void SetCurrentQuestionFeed(){
-
         GetRandomQuestionIndex = Random.Range(0, unansweredQuestionFeeds.Count);
         currentQuestionFeed = unansweredQuestionFeeds[GetRandomQuestionIndex];
 
         AnimalPlaceholder.GetComponent<SpriteRenderer>().sprite = currentQuestionFeed.Animal;
-        QuestionsLimit++;
-
+        QuestionsCounter++;
     }
 
     IEnumerator TransitionToNextQuestion (){
@@ -63,6 +72,7 @@ public class QuestionFeedManager : MonoBehaviour
             print("WRONG");
         }
         StartCoroutine(TransitionToNextQuestion());
+        Start();
     }
 
     public void UserSelectFish(){
@@ -74,6 +84,7 @@ public class QuestionFeedManager : MonoBehaviour
             print("WRONG");
         }
         StartCoroutine(TransitionToNextQuestion());
+        Start();
     }
 
     public void UserSelectVegetation(){
@@ -85,6 +96,7 @@ public class QuestionFeedManager : MonoBehaviour
             print("WRONG");
         }
         StartCoroutine(TransitionToNextQuestion());
+        Start();
     }
 
     public void UserSelectInsect(){
@@ -96,6 +108,7 @@ public class QuestionFeedManager : MonoBehaviour
             print("WRONG");
         }
         StartCoroutine(TransitionToNextQuestion());
+        Start();
     }
 
     public void ResetQuestionsLimit(){
