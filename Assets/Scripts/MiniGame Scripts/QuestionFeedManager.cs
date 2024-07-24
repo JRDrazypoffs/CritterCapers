@@ -8,6 +8,10 @@ using UnityEditor.PackageManager;
 
 public class QuestionFeedManager : MonoBehaviour
 {
+    public Transform AnimalPos;
+    public Transform Sparkle;
+    public GameObject Cross;
+
     public AudioSource BGMPlayer;
     public AudioSource CorrectSFX;
     public AudioSource WrongSFX;
@@ -40,16 +44,16 @@ public class QuestionFeedManager : MonoBehaviour
     private float TimeScore;
     private float TotalTime;
     private float TimePercent;
-    private static float TimeBonusScore = 5;
-    private static int PenaltyScore = 2;
-    private static float FullPercent = 1;
+    private static readonly float TimeBonusScore = 3;
+    private static readonly int PenaltyScore = 2;
+    private static readonly float FullPercent = 1;
 
     private int Counter;
     private bool isCorrect;
 
 
     [SerializeField] private GameObject AnimalPlaceholder;
-    [SerializeField] private GameObject EmptySprite;
+    // [SerializeField] private GameObject EmptySprite;
     // [SerializeField] private TMP_Text AnimalPlaceholder;
     [SerializeField] private float timeBetweenQuestions = 1f;
 
@@ -64,7 +68,7 @@ public class QuestionFeedManager : MonoBehaviour
     }
 
     void Start(){
-        
+        Cross.SetActive(false);
         if (unansweredQuestionFeeds == null || unansweredQuestionFeeds.Count == 0){
             unansweredQuestionFeeds = questionsFeeds.ToList<QuestionsFeed>();
         }
@@ -125,11 +129,14 @@ public class QuestionFeedManager : MonoBehaviour
             CorrectScore++;
             isCorrect=true;
             CorrectSFX.Play();
+            Instantiate(Sparkle, AnimalPos.position, Sparkle.rotation);
             print("CORRECT");
         }else{
             ErrorScore++;
             isCorrect=false;
             WrongSFX.Play();
+            // Instantiate(Cross, AnimalPos.position, Cross.rotation);
+            Cross.SetActive(true);
             print("WRONG");
         }
         StartCoroutine(TransitionToNextQuestion());
@@ -141,11 +148,14 @@ public class QuestionFeedManager : MonoBehaviour
             CorrectScore++;
             isCorrect=true;
             CorrectSFX.Play();
+            Instantiate(Sparkle, AnimalPos.position, Sparkle.rotation);
             print("CORRECT");
         }else{
             ErrorScore++;
             isCorrect=false;
             WrongSFX.Play();
+            // Instantiate(Cross, AnimalPos.position, Cross.rotation);
+            Cross.SetActive(true);
             print("WRONG");
         }
         StartCoroutine(TransitionToNextQuestion());
@@ -157,11 +167,14 @@ public class QuestionFeedManager : MonoBehaviour
             CorrectScore++;
             isCorrect=true;
             CorrectSFX.Play();
+            Instantiate(Sparkle, AnimalPos.position, Sparkle.rotation);
             print("CORRECT");
         }else{
             ErrorScore++;
             isCorrect=false;
             WrongSFX.Play();
+            // Instantiate(Cross, AnimalPos.position, Cross.rotation);
+            Cross.SetActive(true);
             print("WRONG");
         }
         StartCoroutine(TransitionToNextQuestion());
@@ -173,11 +186,14 @@ public class QuestionFeedManager : MonoBehaviour
             CorrectScore++;
             isCorrect=true;
             CorrectSFX.Play();
+            Instantiate(Sparkle, AnimalPos.position, Sparkle.rotation);
             print("CORRECT");
         }else{
             ErrorScore++;
             isCorrect=false;
             WrongSFX.Play();
+            // Instantiate(Cross, AnimalPos.position, Cross.rotation);
+            Cross.SetActive(true);
             print("WRONG");
         }
         StartCoroutine(TransitionToNextQuestion());
@@ -193,7 +209,7 @@ public class QuestionFeedManager : MonoBehaviour
         }else{
             AreaScore-=TotalErrorScore;
         }
-        
+
         TempAreaTotalScore+=AreaScore;
         PlayerPrefs.SetInt("Player Pref Total Score",TempAreaTotalScore);
     }
