@@ -38,6 +38,7 @@ public class CheckAnimalHabitat : MonoBehaviour
     public AudioSource SuccessSound;
     public AudioSource ErrorSound;
     public Transform Sparkle;
+    public Transform Cross;
     public static int ReleaseErrorCount;
     public static int ReleaseSuccessCount;
     
@@ -63,21 +64,25 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (ForestAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Grasslands.GetComponent<PolygonCollider2D>())){
                 ForestAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, GrasslandsPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (ForestAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Desert.GetComponent<PolygonCollider2D>())){
                 ForestAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, DesertPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (ForestAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Wetlands.GetComponent<PolygonCollider2D>())){
                 ForestAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, WetlandsPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (ForestAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Polar.GetComponent<PolygonCollider2D>())){
                 ForestAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, PolarPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
         }
@@ -94,21 +99,25 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (GrasslandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Forest.GetComponent<PolygonCollider2D>())){
                 GrasslandsAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, ForestPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (GrasslandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Desert.GetComponent<PolygonCollider2D>())){
                 GrasslandsAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, DesertPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (GrasslandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Wetlands.GetComponent<PolygonCollider2D>())){
                 GrasslandsAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, WetlandsPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (GrasslandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Polar.GetComponent<PolygonCollider2D>())){
                 GrasslandsAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, PolarPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
         }
@@ -125,21 +134,25 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (WetlandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Grasslands.GetComponent<PolygonCollider2D>())){
                 WetlandsAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, GrasslandsPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (WetlandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Desert.GetComponent<PolygonCollider2D>())){
                 WetlandsAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, DesertPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (WetlandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Forest.GetComponent<PolygonCollider2D>())){
                 WetlandsAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, ForestPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (WetlandsAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Polar.GetComponent<PolygonCollider2D>())){
                 WetlandsAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, PolarPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
         }
@@ -156,21 +169,25 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (DesertAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Grasslands.GetComponent<PolygonCollider2D>())){
                 DesertAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, GrasslandsPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (DesertAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Forest.GetComponent<PolygonCollider2D>())){
                 DesertAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, ForestPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (DesertAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Wetlands.GetComponent<PolygonCollider2D>())){
                 DesertAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, WetlandsPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (DesertAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Polar.GetComponent<PolygonCollider2D>())){
                 DesertAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, PolarPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
         }
@@ -187,21 +204,25 @@ public class CheckAnimalHabitat : MonoBehaviour
             if (PolarAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Grasslands.GetComponent<PolygonCollider2D>())){
                 PolarAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, GrasslandsPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (PolarAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Desert.GetComponent<PolygonCollider2D>())){
                 PolarAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, DesertPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (PolarAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Wetlands.GetComponent<PolygonCollider2D>())){
                 PolarAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, WetlandsPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
             if (PolarAnimals[i].GetComponent<PolygonCollider2D>().IsTouching(Forest.GetComponent<PolygonCollider2D>())){
                 PolarAnimals[i].SetActive(false);
                 ReleaseErrorCount++;
+                Instantiate(Cross, ForestPos.position, Cross.rotation);
                 ErrorSound.Play();
             }
         }
