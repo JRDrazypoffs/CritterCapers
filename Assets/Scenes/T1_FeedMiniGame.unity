@@ -180,6 +180,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
+--- !u!82 &91832838 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5697393942390379216, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
+  m_PrefabInstance: {fileID: 47828789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &132709429
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +506,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1146520377}
+        m_TargetAssemblyTypeName: QuestionFeedManager, Assembly-CSharp
+        m_MethodName: UserSelectVegetation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &719871258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +764,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1146520377}
+        m_TargetAssemblyTypeName: QuestionFeedManager, Assembly-CSharp
+        m_MethodName: UserSelectInsect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &867340158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,6 +862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146520376}
+  - component: {fileID: 1146520377}
   m_Layer: 0
   m_Name: SpritePanel
   m_TagString: Untagged
@@ -856,13 +886,241 @@ Transform:
   - {fileID: 399496720}
   - {fileID: 2058175984}
   - {fileID: 1996382546}
+  - {fileID: 1352209264}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146520377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146520375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4dc7a4ec47e5e479c8bc2e158bf43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CorrectSFX: {fileID: 91832838}
+  WrongSFX: {fileID: 2136871450}
+  questionsFeeds:
+  - Animal: {fileID: 21300000, guid: af5d05fa12d1c094f8978e221b64d704, type: 3}
+    Meat: 1
+    Fish: 0
+    Vegetation: 0
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 35019c1cc2ea5b44c8a06f55427310bd, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 10cbb5260bf33be44b4e2f007dcf1b46, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: c924bc39439e9a14a8a47d94ce4ae405, type: 3}
+    Meat: 1
+    Fish: 0
+    Vegetation: 0
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: e28133fdb99422f4cabf6197c1db1c9e, type: 3}
+    Meat: 1
+    Fish: 1
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 98a4790d4a9dabe48acba0642559ca62, type: 3}
+    Meat: 1
+    Fish: 0
+    Vegetation: 0
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 18818039121b45f4c8b1f5cddd0e96d1, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 8ea6f98c04ed99d42a4f4f41f7d33cdb, type: 3}
+    Meat: 1
+    Fish: 0
+    Vegetation: 0
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 996927ce9cf55a94689e45a7e9cf1c6d, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: f5492f4ff56dd844089848c30bf24a91, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 0649a5593d78adf41984d655056cee9e, type: 3}
+    Meat: 1
+    Fish: 0
+    Vegetation: 1
+    Insect: 1
+  - Animal: {fileID: 21300000, guid: 164e618e409c2e343a553298985c761d, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 1
+  - Animal: {fileID: 21300000, guid: eca0b21989dda874090831daa9b5f5bb, type: 3}
+    Meat: 1
+    Fish: 0
+    Vegetation: 1
+    Insect: 1
+  - Animal: {fileID: 21300000, guid: 83fb74be9aec25147a2857c80ba02318, type: 3}
+    Meat: 1
+    Fish: 0
+    Vegetation: 1
+    Insect: 1
+  - Animal: {fileID: 21300000, guid: 5a42f20b77e5a0e4f874585a86d3f250, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: e0492f6bd80fbc14a9691b0d6ae95352, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: cea476c25cfd83349bba1b5a7be86874, type: 3}
+    Meat: 1
+    Fish: 1
+    Vegetation: 0
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: e178fce21f327ca4ab2af86580efdf0e, type: 3}
+    Meat: 0
+    Fish: 1
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: b90ca7b8ed1f09d4d843769e961d5e24, type: 3}
+    Meat: 1
+    Fish: 1
+    Vegetation: 0
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 35076ad76c0cc4742aabd475ab1327d5, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: d73b7d4ad20bf9d489927382c428b81f, type: 3}
+    Meat: 1
+    Fish: 1
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 916b439757a238a479513865288c2e24, type: 3}
+    Meat: 1
+    Fish: 1
+    Vegetation: 0
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: fce7cf07b0607014dbb11300f340808a, type: 3}
+    Meat: 0
+    Fish: 1
+    Vegetation: 0
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 7b27b6b7f65c31143bafe56a079e0b7b, type: 3}
+    Meat: 0
+    Fish: 0
+    Vegetation: 1
+    Insect: 0
+  - Animal: {fileID: 21300000, guid: 67fc0b70553eb1e4ab75c5763fabd5da, type: 3}
+    Meat: 0
+    Fish: 1
+    Vegetation: 0
+    Insect: 0
+  AnimalPlaceholder: {fileID: 1996382545}
+  EmptySprite: {fileID: 1352209262}
+  timeBetweenQuestions: 1
 --- !u!4 &1301856839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8582701927087165788, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
   m_PrefabInstance: {fileID: 47828789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1352209262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352209264}
+  - component: {fileID: 1352209263}
+  m_Layer: 0
+  m_Name: EmptySprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1352209263
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352209262}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -4
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.89, y: 3.6}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1352209264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352209262}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.96, z: 0}
+  m_LocalScale: {x: 1.2192, y: 1.2192, z: 1.2192}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1146520376}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1564687746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1371,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1146520377}
+        m_TargetAssemblyTypeName: QuestionFeedManager, Assembly-CSharp
+        m_MethodName: UserSelectFish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1785510573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1307,7 +1577,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.96, z: 0}
-  m_LocalScale: {x: 1.2192, y: 1.2192, z: 1.2192}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1146520376}
@@ -1353,7 +1623,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -4
-  m_Sprite: {fileID: 21300000, guid: 9a9687130e0dd674298cdbe1689f1b46, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1361,7 +1631,7 @@ SpriteRenderer:
   m_Size: {x: 5.89, y: 3.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2053320490
@@ -1489,6 +1759,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1895028528}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1146520377}
+        m_TargetAssemblyTypeName: QuestionFeedManager, Assembly-CSharp
+        m_MethodName: UserSelectMeat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1684,6 +1966,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2136871450 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7632108967330506947, guid: 936ce29dbf58e2845af38f01d5dc0b7d, type: 3}
+  m_PrefabInstance: {fileID: 47828789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7851661173691968274
 PrefabInstance:
   m_ObjectHideFlags: 0
