@@ -8,7 +8,7 @@ public class GuidePanelManager : MonoBehaviour
 
     public GameObject NextBtn;
     public GameObject BackBtn;
-    public GameObject PlayBtn;
+    // public GameObject PlayBtn;
 
     public GameObject HelpPanel;
 
@@ -18,18 +18,18 @@ public class GuidePanelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int CurrentLevel = PlayerPrefs.GetInt("Reached Index");
+        int CurrentScore = PlayerPrefs.GetInt("Player Pref Total Score");
 
-        if(CurrentLevel == 0){
+        if(CurrentScore == 0){
             HelpPanel.SetActive(true);
         }else{
             HelpPanel.SetActive(false);
         }
 
         for (int i = 0; i < Slides.Length; i++){
-            Slides[i].gameObject.SetActive(false);
+            Slides[i].SetActive(false);
             if(i==0){
-                Slides[i].gameObject.SetActive(true);
+                Slides[i].SetActive(true);
             }
         }
         
@@ -39,24 +39,24 @@ public class GuidePanelManager : MonoBehaviour
     void Update()
     {
         for (int i = 0; i < Slides.Length; i++){
-            Slides[i].gameObject.SetActive(false);
+            Slides[i].SetActive(false);
             if(i==SlideIndex){
-                Slides[i].gameObject.SetActive(true);
+                Slides[i].SetActive(true);
             }
         }
 
         if(SlideIndex==0){
             NextBtn.SetActive(true);
             BackBtn.SetActive(false);
-            PlayBtn.SetActive(false);
+            // PlayBtn.SetActive(false);
         }else if(SlideIndex==Slides.Length-1){
             NextBtn.SetActive(false);
             BackBtn.SetActive(true);
-            PlayBtn.SetActive(true);
+            // PlayBtn.SetActive(true);
         }else{
             NextBtn.SetActive(true);
             BackBtn.SetActive(true);
-            PlayBtn.SetActive(false);
+            // PlayBtn.SetActive(false);
         }
     }
 
