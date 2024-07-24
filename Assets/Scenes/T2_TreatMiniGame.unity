@@ -783,9 +783,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7938193793641071741, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 336.4307
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938193793641071741, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -231.78867
+      objectReference: {fileID: 0}
     - target: {fileID: 9026876900531492687, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_text
-      value: Treat the animals according to their needs!
+      value: "Treat the animals according \nto their needs!\n<size=60%>\\n     Hint: 
+        Medication when they're ill and Bandage when they're injured</size>"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

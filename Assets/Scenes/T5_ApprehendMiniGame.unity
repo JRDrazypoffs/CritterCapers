@@ -4346,7 +4346,7 @@ Transform:
   m_GameObject: {fileID: 1348451782}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.49, y: 1.4, z: 0}
+  m_LocalPosition: {x: 0.27, y: 1.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6150,9 +6150,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7938193793641071741, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 346.1482
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938193793641071741, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -226.9299
+      objectReference: {fileID: 0}
     - target: {fileID: 9026876900531492687, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_text
-      value: Quickly find 8 hunters hidden in the scenery!
+      value: "Quickly find 8 hunters \nhidden in the scenery!<size=60%>\\n\\n    
+        Hint:  Refer to the wanted posters below to see who to look out for!</size>"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

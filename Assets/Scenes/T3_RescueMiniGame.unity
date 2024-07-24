@@ -2574,9 +2574,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7938193793641071741, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 333.8485
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938193793641071741, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -233.07971
+      objectReference: {fileID: 0}
     - target: {fileID: 9026876900531492687, guid: 1c6fe2eef29ba9d4fb25387f11b2568d, type: 3}
       propertyPath: m_text
-      value: Quickly click on the animals to rescue them!
+      value: "Quickly click on the animals \nto rescue them!<size=60%>\\n\\n    
+        Hint:  You get stickers for your album for each animal you rescue!</size>"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
