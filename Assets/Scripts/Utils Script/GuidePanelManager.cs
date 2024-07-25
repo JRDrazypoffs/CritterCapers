@@ -12,6 +12,8 @@ public class GuidePanelManager : MonoBehaviour
 
     public GameObject HelpPanel;
 
+    public GameObject MiniGameUIPanel;
+
     private int SlideIndex;
 
     
@@ -20,9 +22,10 @@ public class GuidePanelManager : MonoBehaviour
     {
         int CurrentScore = PlayerPrefs.GetInt("Player Pref Total Score");
 
-        if(CurrentScore == 0){
+        if(CurrentScore == 0 || MiniGameUIPanel.activeSelf==true){
+            PauseTheGame();
             HelpPanel.SetActive(true);
-        }else{
+        }else {
             HelpPanel.SetActive(false);
         }
 
@@ -58,6 +61,10 @@ public class GuidePanelManager : MonoBehaviour
             BackBtn.SetActive(true);
             // PlayBtn.SetActive(false);
         }
+
+        if(HelpPanel.activeSelf==false){
+            ResumeTheGame();
+        }
     }
 
     public void NextSlide(){
@@ -65,6 +72,16 @@ public class GuidePanelManager : MonoBehaviour
     }
     public void PrevSlide(){
         SlideIndex--;
+    }
+    public void PauseTheGame(){
+        // PauseMenu.SetActive(true);
+        Time.timeScale = 0;
+        // GameIsPaused = true;
+    }
+    public void ResumeTheGame(){
+        // PauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        // GameIsPaused = false;
     }
 
 }

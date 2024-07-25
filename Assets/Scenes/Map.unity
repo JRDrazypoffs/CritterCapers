@@ -3425,8 +3425,6 @@ GameObject:
   - component: {fileID: 269350500}
   - component: {fileID: 269350499}
   - component: {fileID: 269350498}
-  - component: {fileID: 269350497}
-  - component: {fileID: 269350496}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3458,40 +3456,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
   m_SizeDelta: {x: 660, y: 310}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &269350496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269350494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bd124da762811149b288404107df3ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playOnEnable: 1
-  _startingXScale: 0.8
-  _startingYScale: 0.8
-  _scaleSpeed: 0.2
-  _overshootScaleAmount: 0
-  _overshootReturnSpeed: 0
-  _startingOpacity: 0.5
-  _opacityChangeSpeed: 0.2
-  _startPosOffset: {x: 0, y: 0}
-  _moveInSpeed: 0
---- !u!225 &269350497
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269350494}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!114 &269350498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23031,6 +22995,7 @@ MonoBehaviour:
   NextBtn: {fileID: 433683114}
   BackBtn: {fileID: 561920571}
   HelpPanel: {fileID: 818991704}
+  MiniGameUIPanel: {fileID: 0}
 --- !u!1 &1571670896 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1552013472642057381, guid: cd1e4cbd1ef9ae745887501eec93c37f, type: 3}
