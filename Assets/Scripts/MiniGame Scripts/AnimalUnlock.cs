@@ -39,12 +39,24 @@ public class AnimalUnlock : MonoBehaviour
                 PlayerPrefs.SetInt("Player Pref Animal 17",1);
                 PlayerPrefs.SetInt("Player Pref Animal 18",1);
                 PlayerPrefs.SetInt("Player Pref Animal 19",1);
-            }else{
+            }else if(AreaRandomiser.AreaRandomNumber==4){
                 PlayerPrefs.SetInt("Player Pref Animal 20",1);
                 PlayerPrefs.SetInt("Player Pref Animal 21",1);
                 PlayerPrefs.SetInt("Player Pref Animal 22",1);
                 PlayerPrefs.SetInt("Player Pref Animal 23",1);
                 PlayerPrefs.SetInt("Player Pref Animal 24",1);
+            }else if(AreaRandomiser.AreaRandomNumber==5){
+                PlayerPrefs.SetInt("Player Pref Animal 1",1);
+                PlayerPrefs.SetInt("Player Pref Animal 2",1);
+                PlayerPrefs.SetInt("Player Pref Animal 12",1);
+                PlayerPrefs.SetInt("Player Pref Animal 17",1);
+                PlayerPrefs.SetInt("Player Pref Animal 19",1);
+            }else if(AreaRandomiser.AreaRandomNumber==6){
+                PlayerPrefs.SetInt("Player Pref Animal 3",1);
+                PlayerPrefs.SetInt("Player Pref Animal 5",1);
+                PlayerPrefs.SetInt("Player Pref Animal 1",1);
+                PlayerPrefs.SetInt("Player Pref Animal 20",1);
+                PlayerPrefs.SetInt("Player Pref Animal 21",1);
             }
         }
     }
