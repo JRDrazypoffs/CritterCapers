@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using TMPro;
 
 public class ClickControl_Rescue : MonoBehaviour
 {
@@ -15,12 +16,15 @@ public class ClickControl_Rescue : MonoBehaviour
     public Transform SuccessClick;
     public AudioSource FoundSound;
 
-    // private int AnimalCount = 0;
+    public TMP_Text CounterText;
 
+    void Start(){
 
+    }
     // Start is called before the first frame update
     void Update()
     {
+        CounterText.text = CheckEmptyContainer.ObjectCounter.ToString()+"/5";
         // if(AnimalCount == 4){
         //     PauseGame.GameIsPaused=true;
         //     Debug.Log("All rescued");

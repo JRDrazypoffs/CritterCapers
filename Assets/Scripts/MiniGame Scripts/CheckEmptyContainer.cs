@@ -30,8 +30,11 @@ public class CheckEmptyContainer : MonoBehaviour
 
     public static bool CheckClear = false;
 
+    public static int ObjectCounter;
+
     // Start is called before the first frame update
     void Start(){
+        ObjectCounter=0;
         string TempUsername = PlayerPrefs.GetString("Player Pref Username");
         int TempTotalScore = PlayerPrefs.GetInt("Player Pref Total Score");
         Username = TempUsername;
@@ -52,6 +55,7 @@ public class CheckEmptyContainer : MonoBehaviour
         {
             if (ObjectList[i] == null){
                 ObjectList.RemoveAt(i);
+                ObjectCounter++;
                 TimePercent = RemainingTime/TotalTime*FullPercent;
                 print("TimePercent: "+TimePercent);
                 TimeScore += TimePercent*TimeBonusScore;
